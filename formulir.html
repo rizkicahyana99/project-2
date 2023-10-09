@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Prakerja 2023</h1>
+
+    <!-- 
+        tag input memiliki type sebagai berikut: 
+        - text      ==> digunakan untuk menampung data alfabetis, simbol, dan numerik
+        - number    ==> digunakan untuk menampung data numerik / angka saja
+        - date      ==> date picker    ==> memilih tanggal bulan tahun 
+        - file      ==> menambahkan lampiran / file 
+        - submit    ==> men-trigger submit formulir     ==> mengirimkan data dari client / browser ke backend / server 
+        - reset     ==> menghapus semua inputan yang sudah diisi
+        - email     ==> menampung data email yang valid
+        - radio     ==> wajib memilih 1 pilihan
+        - checkbox     ==> boleh memilih lebih dari 1 pilihan
+
+        tips penamaan name / id / class / for:
+        - jika lebih dari 1 kata, jangan menggunakan spasi; gunakanlah simbol "-" atau "_"
+
+    -->
+
+    <form>
+        <label for="nama">Nama: </label>
+        <input type="text" id="nama" name="nama" placeholder="Nama Kamu???" /> <br/>
+
+        <label for="tempat_lahir">Tempat Lahir: </label>
+        <input type="text" id="tempat_lahir" name="tempat_lahir" /> <br/>
+
+        <label for="tanggal_lahir">Tanggal Lahir: </label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" /> <br/>
+
+        <label for="jenis_kelamin">Jenis Kelamin: </label>
+        <input type="radio" name="jenis_kelamin" value="Laki-Laki" /> Laki-Laki 
+        <input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan <br/>
+
+        <label for="pelatihan">Jenis Pelatihan: </label> <br/>
+        <input type="checkbox" name="pelatihan[]" value="Pengantar HTML" /> Pengantar HTML <br/>
+        <input type="checkbox" name="pelatihan[]" value="Pengenalan CSS" /> Pengenalan CSS <br/>
+        <input type="checkbox" name="pelatihan[]" value="Bermain dengan JavaScript" /> Bermain dengan JavaScript <br/>
+        <input type="checkbox" name="pelatihan[]" value="Yuk Kenalan dengan MySQL!" /> Yuk Kenalan dengan MySQL! <br/>
+
+        <label for="email">E-Mail: </label>
+        <input type="email" id="email" name="email" /> <br/>
+
+        <label for="jumlah_anggota_keluarga">Jumlah Anggota Keluarga: </label>
+        <input type="number" id="jumlah_anggota_keluarga" name="jumlah_anggota_keluarga" /> <br/>
+
+        <label for="kewarganegaraan">Kewarganegaraan: </label>
+        <select name="kewarganegaraan" id="kewarganegaraan">
+            <option value="" disabled selected>- Pilih Kewarganegaraan -</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Australia">Australia</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Vietnam">Vietnam</option>
+        </select> <br/>
+
+        <label for="Alamat" style="vertical-align: top;">Alamat: </label>
+        <textarea name="Alamat" id="Alamat" cols="30" rows="10"></textarea> <br/>
+
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" /> <br/>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" /> <br/><br/>
+
+        <input type="submit" value="Daftar" />
+        <input type="reset" value="Bersihkan" />
+
+    </form>
+
+</body>
+</html>

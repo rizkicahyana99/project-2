@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menambahkan Gambar</title>
+</head>
+<body>
+    <hr/>
+    <a href="text-format.html">Text Format</a> | 
+    <a href="hyperlink.html">Hyperlink</a> | 
+    <a href="audio-video.html">Audio - Video</a> | 
+    <hr/>
+
+    <h1>Menambahkan Gambar</h1>
+    <!-- 
+        jika file gambar berada di direktori / folder / lokasi yang sama dengan file html
+        format: 
+           <img src="namafile.ekstensi" alt="keterangan gambar" />
+    -->
+    <img src="hacktiv8.png" alt="Logo Hacktiv8" width="100px" />
+
+    <!-- 
+        jika file gambar berada di direktori / folder / lokasi yang berbeda, maka: 
+
+            jika berada di dalam folder, maka:
+            format: 
+            <img src="namafolder/namafile.ekstensi" alt="keterangan gambar" />
+
+            jika berada di dalam folder dari folder lain, maka:
+            <img src="namafolder1/namafolder2/namafile.ekstensi" alt="keterangan gambar" />
+            
+            jika berada di luar folder saat ini, maka: 
+            <img src="../namafile.ekstensi" alt="keterangan gambar" />
+            <img src="../../namafile.ekstensi" alt="keterangan gambar" />
+
+    -->
+
+    <img src="assets/prakerja.png" alt="Logo Prakerja" width="200px" />
+    
+    <img src="assets/bahan/profile-picture.png" alt="Profile Picture" width="100px" />
+
+    <img src="../bendera-indonesia.png" alt="Bendera Indonesia" width="200px" />
+
+
+
+</body>
+</html>
